@@ -336,18 +336,10 @@ message.member.voiceChannel.join();
 client.on('message', function(message) {
 	const myID = "346045919072092161";
     let args = message.content.split(" ").slice(1).join(" ");
-    if(message.content.startsWith(prefix + "setname")) {
+    if(message.content.startsWith(prefix + "howareyoualashaq")) {
 		        if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتب الحالة اللي تريدها.');
         client.user.setUsername(args);
-        message.channel.send(':white_check_mark: Done!').then(msg => {
-           msg.delete(5000);
-          message.delete(5000);
-        });
-    } else if(message.content.startsWith(prefix + "play")) {
-				        if(message.author.id !== myID) return;
-            if(!args) return message.reply('اكتب الحالة اللي تريدها.');
-        client.user.setGame(args);
         message.channel.send(':white_check_mark: Done!').then(msg => {
            msg.delete(5000);
           message.delete(5000);
@@ -370,8 +362,6 @@ client.on('message', function(message) {
         });
     }
 });
-
-
 
 
  
