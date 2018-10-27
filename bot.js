@@ -42,3 +42,5 @@ const devs = ['346045919072092161'];
         })
     }
 });
+
+client.login(process.env.BOT_TOKEN);
