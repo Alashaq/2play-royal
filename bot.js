@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('message', message => {
-const adminprefix = "-";
+const adminprefix = "!";
 const devs = ['346045919072092161'];
     var command = message.content.split(" ")[0];
     if(command == adminprefix + 'bc') {
